@@ -1,0 +1,90 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+      <style>
+        .allTxt {
+          color: white;
+          text-align: center;
+        }
+        #output {
+          font-size: 160%;
+          /*padding: 0px;*/
+        }
+        #mainButton {
+          text-align: center;
+          font-size: 300%;
+          width: 80%;
+          height: 14%;
+          background: #FFFFFF;
+          border: outset;
+          border-radius: 36px;
+          color: white;
+
+        }
+        .mainButtonClass {
+          text-align: center;
+          padding: 12%;
+        }
+        button.hover {
+          color: green;
+        }
+      </style>
+    </head>
+
+  <body style="background: black;">
+    <header>
+      <div class="allTxt">
+        <div
+        style="border-bottom: outset;
+        padding: 1%;
+        ">
+          <label style="font-size: 300%;">Мы создали проект, который скопировали</label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <form>
+        <div style="
+          padding-top: 2%;
+          padding-right: 20%;
+          padding-left: 20%;
+          text-align: center;
+        ">
+          <div style="border: inset;">
+            <label id="output">
+              <py-script>                                                       <!--ВЫПОЛНЕНИЕ ПИТОН КОДА (ВЫВОД ТРАНСКРИПЦИИ) -->
+                print("Тут будет ваш транскрибированный текст")
+              </py-script>
+            </label>
+          </div>
+        </div>
+        <div style="
+          padding-top: 2%;
+          padding-right: 20%;
+          padding-left: 20%;
+          text-align: center;
+        ">
+          <div style="border: inset;">
+            <input type="file" name="file">
+          </div>
+        </div>
+        <div class="allTxt">
+          <div class="mainButtonClass">
+            <input type="submit" value="Транскрибировать аудио в текст" id="mainButton" >          <!--ГЛАВНАЯ КНОПКА-->
+          </div>
+        </div>
+      </form>
+    </main>
+    <div style="padding: 20%;"></div>
+    <footer style="
+      background: #333333;
+      padding-bottom: 16px;
+    ">
+      <p style="padding: 8px;"></p>
+      <p style="padding-left: 16px; display: inline;">Проект был выполнен: Шкелем Даниилом и Загаловым Давидом</p>      
+    </footer>
+  </body>
+</html>
